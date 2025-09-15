@@ -1,6 +1,5 @@
 ---
 
-````markdown
 # Sykehusopphold
 
 **Prediksjon av sykehusopphold basert på pasientdata**
@@ -9,24 +8,25 @@
 
 ## 📌 Innhold
 
-- [Om prosjektet](#om-prosjektet)  
-- [Forutsetninger](#forutsetninger)  
-- [Installasjon](#installasjon)  
-- [Kjøre prosjektet](#kjøre-prosjektet)  
-  - [Trene / modellgenerering](#trene--modellgenerering)  
-  - [Nettside / applikasjon](#nettside--applikasjon)  
-- [Data](#data)  
-- [Filstruktur](#filstruktur)  
-- [Hvordan bruke applikasjonen](#hvordan-bruke-applikasjonen)  
-- [Resultater / output](#resultater--output)  
-- [Avhengigheter / biblioteker](#avhengigheter--biblioteker)  
-- [Kontakt / videre arbeid](#kontakt--videre-arbeid)
+* [Om prosjektet](#om-prosjektet)
+* [Forutsetninger](#forutsetninger)
+* [Installasjon](#installasjon)
+* [Kjøre prosjektet](#kjøre-prosjektet)
+
+  * [Trene / modellgenerering](#trene--modellgenerering)
+  * [Nettside / applikasjon](#nettside--applikasjon)
+* [Data](#data)
+* [Filstruktur](#filstruktur)
+* [Hvordan bruke applikasjonen](#hvordan-bruke-applikasjonen)
+* [Resultater / output](#resultater--output)
+* [Avhengigheter / biblioteker](#avhengigheter--biblioteker)
+* [Kontakt / videre arbeid](#kontakt--videre-arbeid)
 
 ---
 
 ## 📖 Om prosjektet
 
-Dette prosjektet har som mål å **predikere sykehusopphold** for pasienter basert på historiske pasientdata.  
+Dette prosjektet har som mål å **predikere sykehusopphold** for pasienter basert på historiske pasientdata.
 Ved hjelp av maskinlæring trenes en modell som estimerer hvorvidt og eventuelt hvor lenge en pasient vil være innlagt, gitt data om pasienten.
 
 Detaljert dokumentasjon og analyser finnes i `Rapport.pdf` og `prosjektbeskrivelse.pdf`.
@@ -37,20 +37,22 @@ Detaljert dokumentasjon og analyser finnes i `Rapport.pdf` og `prosjektbeskrivel
 
 Før du kjører programmet må du ha:
 
-- `Python` installert (anbefalt 3.8 eller nyere)  
-- Datasettfilene:
-  - `raw_data/` katalog  
-  - `sample_data/` katalog  
+* `Python` installert (anbefalt 3.8 eller nyere)
+* Datasettfilene:
+
+  * `raw_data/` katalog
+  * `sample_data/` katalog
 
 ---
 
 ## 💻 Installasjon
 
 1. Klon eller last ned repository:
+
    ```bash
    git clone https://github.com/PetterHoff/Sykehusopphold.git
    cd Sykehusopphold
-````
+   ```
 
 2. Opprett et virtuelt miljø (anbefalt) og aktiver det:
 
@@ -178,10 +180,4 @@ Kontakt [Petter Hoff](mailto:din-epost@eksempel.no)
 
 ---
 
-```
-
----
-
-Hvis du vil, kan jeg også lage en `requirements.txt` for deg basert på de bibliotekene som mest sannsynlig brukes i prosjektet.  
-Vil du at jeg skal gjøre det også?
-```
+Vil du at jeg nå lager en ferdig `requirements.txt` basert på disse bibliotekene slik at du bare kan legge den ved i prosjektet?
