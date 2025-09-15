@@ -8,3 +8,5 @@ flask
 joblib
 waitress
 nbformat
+ipython
+jupyter
