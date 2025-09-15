@@ -1,10 +1,5 @@
----
-
-# Sykehusopphold
 
 **Prediksjon av sykehusopphold basert på pasientdata**
-
----
 
 ## 📌 Innhold
 
