@@ -161,18 +161,3 @@ pip install -r requirements.txt
 
 ---
 
-## 📩 Kontakt / videre arbeid
-
-**For spørsmål eller forslag:**
-Kontakt [Petter Hoff](mailto:din-epost@eksempel.no)
-
-**Mulig videre arbeid:**
-
-* Evaluere modellen med flere metrikker og kryssvalidering
-* Utvide med flere features
-* Forbedre ytelse og brukergrensesnitt
-* Deploye webappen til sky (Heroku, AWS, etc.)
-
----
-
-Vil du at jeg nå lager en ferdig `requirements.txt` basert på disse bibliotekene slik at du bare kan legge den ved i prosjektet?
