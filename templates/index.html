@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Form</title>
+</head>
+<body>
+    <h1>Forventet Sykehusopphold for pasient</h1>
+    <p>Under ser du et skjema, hvor du kan fylle ut pasient data. MERK at alle feltene må bli fylt ut før du kan predikere sykehusoppholdet</p>
+    <p>Dersom du trenger en databeskrivelse, som forklarer variablene kan du gå inn på <a href="https://git.app.uib.no/inf161/prosjekt/-/blob/master/README.md?ref_type=heads" target="_blank">denne lenken</a> for å sjekke ut</p>
+    <form id="predictionForm" action="/predict" method="POST">
+
+    <label for="alder">alder:</label>
+    <input type="number" id="alder" name="alder" required><br><br>
+
+    <label for="utdanning">utdanning:</label>
+    <input type="number" id="utdanning" name="utdanning" required><br><br>
+
+    <label for="blodtrykk">blodtrykk:</label>
+    <input type="number" id="blodtrykk" name="blodtrykk" required><br><br>
+    
+    <label for="hvite_blodlegemer">hvite_blodlegemer</label>
+    <input type="number" id="hvite_blodlegemer" name="hvite_blodlegemer" required><br><br>
+
+    <label for="hjertefrekvens">hjertefrekvens</label>
+    <input type="number" id="hjertefrekvens" name="hjertefrekvens" required><br><br>
+
+    <label for="respirasjonsfrekvens">respirasjonsfrekvens</label>
+    <input type="number" id="respirasjonsfrekvens" name="respirasjonsfrekvens" required><br><br>
+    
+    <label for="kroppstemperatur">kroppstemperatur</label>
+    <input type="number" id="kroppstemperatur" name="kroppstemperatur" required><br><br>
+
+    <label for="lungefunksjon">lungefunksjon</label>
+    <input type="number" id="lungefunksjon" name="lungefunksjon" required><br><br>
+
+    <label for="serumalbumin">serumalbumin:</label>
+    <input type="number" id="serumalbumin" name="serumalbumin" required><br><br>
+
+    <label for="kreatinin">kreatinin:</label>
+    <input type="number" id="kreatinin" name="kreatinin" required><br><br>
+
+    <label for="natrium">natrium:</label>
+    <input type="number" id="natrium" name="natrium" required><br><br>
+
+    <label for="blod_ph">blod_ph:</label>
+    <input type="number" id="blod_ph" name="blod_ph" required><br><br>
+
+    <label for="blodurea_nitrogen">blodurea_nitrogen:</label>
+    <input type="number" id="blodurea_nitrogen" name="blodurea_nitrogen" required><br><br>
+
+    <label for="urinmengde">urinmengde:</label>
+    <input type="number" id="urinmengde" name="urinmengde" required><br><br>
+
+    <label for="antall_komorbiditeter">antall_komorbiditeter:</label>
+    <input type="number" id="antall_komorbiditeter" name="antall_komorbiditeter" required><br><br>
+
+    <label for="koma_score">koma_score:</label>
+    <input type="number" id="koma_score" name="koma_score" required><br><br>
+
+    <label for="fysiologisk_score">fysiologisk_score:</label>
+    <input type="number" id="fysiologisk_score" name="fysiologisk_score" required><br><br>
+
+    <label for="apache_fysiologisk_score">apache_fysiologisk_score:</label>
+    <input type="number" id="apache_fysiologisk_score" name="apache_fysiologisk_score" required><br><br>
+
+    <label for="overlevelsesestimat_2mnd">overlevelsesestimat_2mnd:</label>
+    <input type="number" id="overlevelsesestimat_2mnd" name="overlevelsesestimat_2mnd" required><br><br>
+
+    <label for="overlevelsesestimat_6mnd">overlevelsesestimat_6mnd:</label>
+    <input type="number" id="overlevelsesestimat_6mnd" name="overlevelsesestimat_6mnd" required><br><br>
+
+    <label for="diabetes">diabetes:</label>
+    <select id="diabetes" name="diabetes" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="demens">demens:</label>
+    <select id="demens" name="demens" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="lege_overlevelsesestimat_2mnd">lege_overlevelsesestimat_2mnd:</label>
+    <input type="number" id="lege_overlevelsesestimat_2mnd" name="lege_overlevelsesestimat_2mnd" required><br><br>
+
+    <label for="lege_overlevelsesestimat_6mnd">lege_overlevelsesestimat_6mnd:</label>
+    <input type="number" id="lege_overlevelsesestimat_6mnd" name="lege_overlevelsesestimat_6mnd" required><br><br>
+
+    <label for="adl">adl:</label>
+    <input type="number" id="adl" name="adl" required><br><br>
+
+    <label for="inntekt">inntekt:</label>
+    <select id="inntekt" name="inntekt" required>
+        <option value="mangler">Mangler</option>
+        <option value="25-50k">$25-$50k</option>
+        <option value="over_50k">>$50k</option>
+        <option value="under_11k">Under $11k</option>
+    </select><br><br>  
+
+    <label for="kjønn">kjønn:</label>
+    <select id="kjønn" name="kjønn" required>
+        <option value="Mann">Mann</option>
+        <option value="Dame">Dame</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_CHF">sykdom_underkategori_CHF:</label>
+    <select id="sykdom_underkategori_CHF" name="sykdom_underkategori_CHF" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_COPD">sykdom_underkategori_COPD:</label>
+    <select id="sykdom_underkategori_COPD" name="sykdom_underkategori_COPD" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_Cirrhosis">sykdom_underkategori_Cirrhosis:</label>
+    <select id="sykdom_underkategori_Cirrhosis" name="sykdom_underkategori_Cirrhosis" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_Colon_Cancer">sykdom_underkategori_Colon_Cancer:</label>
+    <select id="sykdom_underkategori_Colon_Cancer" name="sykdom_underkategori_Colon_Cancer" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_Coma">sykdom_underkategori_Coma:</label>
+    <select id="sykdom_underkategori_Coma" name="sykdom_underkategori_Coma" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_Lung_Cancer">sykdom_underkategori_Lung_Cancer:</label>
+    <select id="sykdom_underkategori_Lung_Cancer" name="sykdom_underkategori_Lung_Cancer" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdom_underkategori_MOSF w/Malig">sykdom_underkategori_MOSF w/Malig:</label>
+    <select id="sykdom_underkategori_MOSF w/Malig" name="sykdom_underkategori_MOSF w/Malig" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdomskategori_COPD/CHF/Cirrhosis">sykdomskategori_COPD/CHF/Cirrhosis:</label>
+    <select id="sykdomskategori_COPD/CHF/Cirrhosis" name="sykdomskategori_COPD/CHF/Cirrhosis" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="sykdomskategori_Coma">sykdomskategori_Coma:</label>
+    <select id="sykdomskategori_Coma" name="sykdomskategori_Coma" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="kreft">kreft:</label>
+    <select id="kreft" name="kreft" required>
+        <option value="Ja">Ja</option>
+        <option value="Nei">Nei</option>
+    </select><br><br>
+
+    <label for="etnisitet">etnisitet:</label>
+    <select id="etnisitet" name="etnisitet" required>
+        <option value="Hvit">White</option>
+        <option value="Annet">Other</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+    </form>
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+
+</body>
+</html>
