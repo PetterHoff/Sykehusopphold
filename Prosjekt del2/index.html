@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksjonsskjema</title>
+</head>
+<body>
+    <h1>Fyll inn data for prediksjon</h1>
+    
+    <form action="/predict" method="post">
+        <!-- Tekst-input -->
+        <label for="navn">Navn:</label>
+        <input type="text" id="navn" name="navn" required><br><br>
+
+        <!-- Numerisk input -->
+        <label for="alder">Alder:</label>
+        <input type="number" id="alder" name="alder" min="0" max="120" required><br><br>
+
+        <!-- Dato-input -->
+        <label for="dato">Velg en dato:</label>
+        <input type="date" id="dato" name="dato"><br><br>
+
+        <!-- Tid-input -->
+        <label for="tid">Velg tid:</label>
+        <input type="time" id="tid" name="tid"><br><br>
+
+        <!-- Rullegardinmeny -->
+        <label for="valg">Velg en kategori:</label>
+        <select id="valg" name="valg">
+            <option value="kategori1">Kategori 1</option>
+            <option value="kategori2">Kategori 2</option>
+            <option value="kategori3">Kategori 3</option>
+        </select><br><br>
+
+        <!-- Knapper for å sende inn og nullstille -->
+        <button type="submit">Send inn</button>
+        <button type="reset">Nullstill</button>
+    </form>
+</body>
+</html>
