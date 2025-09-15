@@ -1,9 +1,10 @@
 numpy
 pandas
 plotly
-scikit-learn==1.5.1
+scikit-learn
 seaborn
 matplotlib
 flask
 joblib
 waitress
+nbformat
