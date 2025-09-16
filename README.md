@@ -65,7 +65,7 @@ Før du kjører programmet må du ha:
 
 ---
 
-## ▶️ Kjøre prosjektet
+## Kjøre prosjektet
 
 ### Trene / modellgenerering
 
