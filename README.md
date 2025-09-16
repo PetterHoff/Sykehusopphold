@@ -1,7 +1,7 @@
 
 **Prediksjon av sykehusopphold basert på pasientdata**
 
-## 📌 Innhold
+## Innhold
 
 * [Om prosjektet](#om-prosjektet)
 * [Forutsetninger](#forutsetninger)
@@ -19,7 +19,7 @@
 
 ---
 
-## 📖 Om prosjektet
+## Om prosjektet
 
 Dette prosjektet har som mål å **predikere sykehusopphold** for pasienter basert på historiske pasientdata.
 Ved hjelp av maskinlæring trenes en modell som estimerer hvorvidt og eventuelt hvor lenge en pasient vil være innlagt, gitt data om pasienten.
@@ -28,7 +28,7 @@ Detaljert dokumentasjon og analyser finnes i `Rapport.pdf` og `prosjektbeskrivel
 
 ---
 
-## ⚙️ Forutsetninger
+## Forutsetninger
 
 Før du kjører programmet må du ha:
 
@@ -40,7 +40,7 @@ Før du kjører programmet må du ha:
 
 ---
 
-## 💻 Installasjon
+## Installasjon
 
 1. Klon eller last ned repository:
 
@@ -67,7 +67,7 @@ Før du kjører programmet må du ha:
 
 ## ▶️ Kjøre prosjektet
 
-### 🧠 Trene / modellgenerering
+### Trene / modellgenerering
 
 * Åpne `Main.ipynb` i Jupyter Notebook eller VS Code
 * Pass på at mappene `raw_data/` og `sample_data/` ligger i prosjektmappen
@@ -82,7 +82,7 @@ Før du kjører programmet må du ha:
 
 ---
 
-### 🌐 Nettside / applikasjon
+### Nettside / applikasjon
 
 * Start webapplikasjonen ved å kjøre:
 
@@ -94,14 +94,14 @@ Før du kjører programmet må du ha:
 
 ---
 
-## 📊 Data
+## Data
 
 * `raw_data/`: Rådata brukt for å trene modellen
 * `sample_data/`: Eksempeldata som modellen kan predikere på
 
 ---
 
-## 📁 Filstruktur
+## Filstruktur
 
 ```
 Sykehusopphold/
@@ -120,7 +120,7 @@ Sykehusopphold/
 
 ---
 
-## 🖱️ Hvordan bruke applikasjonen
+## Hvordan bruke applikasjonen
 
 1. Sørg for at `modell.pkl` er generert ved å kjøre `Main.ipynb`
 2. Start webapplikasjonen med `app.py`
@@ -130,7 +130,7 @@ Sykehusopphold/
 
 ---
 
-## 📁 Resultater / output
+## Resultater / output
 
 Når alt er kjørt vil du ha:
 
@@ -141,16 +141,23 @@ Når alt er kjørt vil du ha:
 
 ---
 
-## 📦 Avhengigheter / biblioteker
+## Avhengigheter / biblioteker
 
 Prosjektet bruker blant annet:
 
 ```
-pandas
 numpy
+pandas
+plotly
 scikit-learn
+seaborn
+matplotlib
 flask
 joblib
+waitress
+nbformat
+ipython
+jupyter
 ```
 
 Installer gjerne via:
